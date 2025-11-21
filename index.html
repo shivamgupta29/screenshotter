@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preferences</title>
+  <style>
+    body {
+      background: #222233;
+      color: #aaccff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+    }
+    #base{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    button {
+      padding: 8px 12px;
+      background: #333;
+      color: #eee;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #choose{
+      margin-top: 30px;
+    }
+    button:hover {
+      background: #444;
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="base">
+    <h2>Screenshotter Settings</h2>
+
+    <p>Screenshot folder:</p>
+    <div id="folder"></div>
+    <button id="choose">Change folder</button>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
